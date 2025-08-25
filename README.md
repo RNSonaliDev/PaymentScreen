@@ -48,3 +48,40 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+
+# React Native Payment Screen Demo
+
+This project is a small demo app built with **React Native (Expo)** as part of a take home assignment.  
+The goal is to show how the same Payment screen can be reused for both **Domestic** and **International** transfers.
+
+---
+
+## Features
+
+- Single `PaymentScreen` reused for both flows
+- Radio button to switch between **Domestic** and **International**
+- Form validation handled with `react-hook-form` + `yup`
+- Different validation rules depending on the transfer type  
+  - Domestic: recipient name, account number, amount  
+  - International: same as above + IBAN, SWIFT code
+- When switching tab, the form resets and auto focuses back on **Recipient Name**
+- "Send Payment" button is fixed at the bottom
+- All data is mocked (no API calls)
+
+---
+
+## Tech stack
+
+- React Native (Expo)
+- react-hook-form
+- yup
+
+---
+
+## Setup
+
+```bash
+git clone https://github.com/RNSonaliDev/PaymentScreen.git
+cd PaymentGatway
+npm install
